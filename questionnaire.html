@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ra">
+
+<head>
+    <title>Опросник для владельцев котиков</title>
+    <link rel="icon" href="cat.png" type="image/png" />
+    <style>
+        .red {
+            color: darkred;
+        }
+
+        input:required:valid {
+            border: 2.5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="catname">Как зовут вашего питомца? <span class="red">*</span></label> <br />
+            <input type="text" id="catname" required />
+        </div><br />
+        <div>
+            <fieldset>
+                <legend>Ваши данные</legend>
+                <div><label for="yourname">Ваше имя? <span class="red">*</span></label>
+                    <input type="text" id="yourname" required /></div>
+                <div>
+                    <label for="yourcontacts">Введите ваш номер телефона:<span class="red">*</span></label>
+                    <input type="tel" id="yourcontacts" required />
+                </div>
+                <div>
+                    <label for="yourcontacts">Введите вашу почту:<span class="red">*</span></label>
+                    <input type="email" id="yourcontacts" required />
+                </div>
+
+
+            </fieldset>
+        </div>
+        <div> Какая порода у вашего котика?<span class="red">*</span>
+            <select required>
+                <option value="" selected>Выбрать</option>
+                <option value="1">Мейн-кун</option>
+                <option value="2">Манчкин</option>
+                <option value="3">Бурма</option>
+            </select>
+        </div>
+        <div>
+            <label> Чем он питается? <span class="red">*</span>
+                <div>
+                    <p><input type="checkbox" name="food" value="1" required /> Сухой корм</p>
+                    <p> <input type="checkbox" name="food" value="2" /> Влажный корм</p>
+                    <p> <input type="checkbox" name="food" value="3" /> Натуральный корм</p>
+                </div>
+            </label>
+        </div>
+        <div>
+            <label> Пол вашего питомца:
+                <div>
+                    <p><input type="radio" name="sex" value="f" required /> Девочка </p>
+                    <p><input type="radio" name="sex" value="m" /> Мальчик</p>
+                </div>
+
+
+            </label>
+        </div>
+
+        <div> Ваш комментарий:
+            <label for="comment"></label>
+            <textarea cols="10" id="comment"></textarea>
+        </div>
+        <div> Поделитесь фотографией вашего котика <br />
+            <input type="file" />
+        </div>
+
+
+        <button>Сохранить</button>
+    </form>
+    <script>
+
+    </script>
+</body>
+
+</html>
